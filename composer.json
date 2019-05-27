@@ -39,12 +39,7 @@
     "oscarotero/env": "^1.1.0",
     "roots/wordpress": "5.2",
     "roots/wp-config": "1.0.0",
-    "roots/wp-password-bcrypt": "1.0.0",
-    "wpackagist-plugin/beaver-builder-lite-version": "2.2.2.5",
-    "wpackagist-plugin/live-composer-page-builder": "^1.4",
-    "wpackagist-plugin/siteorigin-panels": "^2.10",
-    "wpackagist-plugin/elementor": "^2.5",
-    "wpackagist-plugin/front-end-editor": "^2.3"
+    "roots/wp-password-bcrypt": "1.0.0"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.0.2",

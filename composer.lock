@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cb884fc66a4174e8ac2e9c1f6987a3a0",
+    "content-hash": "8409a9acfb64641a09e2bc8333bb0b19",
     "packages": [
         {
             "name": "composer/installers",
@@ -521,106 +521,6 @@
                 "environment"
             ],
             "time": "2019-03-06T09:39:45+00:00"
-        },
-        {
-            "name": "wpackagist-plugin/beaver-builder-lite-version",
-            "version": "2.2.2.5",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/beaver-builder-lite-version/",
-                "reference": "tags/2.2.2.5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/beaver-builder-lite-version.2.2.2.5.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/beaver-builder-lite-version/"
-        },
-        {
-            "name": "wpackagist-plugin/elementor",
-            "version": "2.5.15",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/elementor/",
-                "reference": "tags/2.5.15"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/elementor.2.5.15.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/elementor/"
-        },
-        {
-            "name": "wpackagist-plugin/front-end-editor",
-            "version": "2.3.1",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/front-end-editor/",
-                "reference": "tags/2.3.1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/front-end-editor.2.3.1.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/front-end-editor/"
-        },
-        {
-            "name": "wpackagist-plugin/live-composer-page-builder",
-            "version": "1.4.4",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/live-composer-page-builder/",
-                "reference": "tags/1.4.4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/live-composer-page-builder.1.4.4.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/live-composer-page-builder/"
-        },
-        {
-            "name": "wpackagist-plugin/siteorigin-panels",
-            "version": "2.10.5",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/siteorigin-panels/",
-                "reference": "tags/2.10.5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/siteorigin-panels.2.10.5.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/siteorigin-panels/"
         }
     ],
     "packages-dev": [
@@ -885,6 +785,106 @@
                 "standards"
             ],
             "time": "2019-04-10T23:49:02+00:00"
+        },
+        {
+            "name": "wpackagist-plugin/beaver-builder-lite-version",
+            "version": "2.2.2.5",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/beaver-builder-lite-version/",
+                "reference": "tags/2.2.2.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/beaver-builder-lite-version.2.2.2.5.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/beaver-builder-lite-version/"
+        },
+        {
+            "name": "wpackagist-plugin/elementor",
+            "version": "2.5.15",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/elementor/",
+                "reference": "tags/2.5.15"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/elementor.2.5.15.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/elementor/"
+        },
+        {
+            "name": "wpackagist-plugin/front-end-editor",
+            "version": "2.3.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/front-end-editor/",
+                "reference": "tags/2.3.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/front-end-editor.2.3.1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/front-end-editor/"
+        },
+        {
+            "name": "wpackagist-plugin/live-composer-page-builder",
+            "version": "1.4.4",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/live-composer-page-builder/",
+                "reference": "tags/1.4.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/live-composer-page-builder.1.4.4.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/live-composer-page-builder/"
+        },
+        {
+            "name": "wpackagist-plugin/siteorigin-panels",
+            "version": "2.10.5",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/siteorigin-panels/",
+                "reference": "tags/2.10.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/siteorigin-panels.2.10.5.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/siteorigin-panels/"
         }
     ],
     "aliases": [],
