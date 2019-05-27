@@ -34,3 +34,34 @@
     margin: 0 .35em .4em 0;
     padding: 0;
   }
+
+.wpdbvc-addnew {
+  margin: 1rem auto 2rem;
+}
+  .wpdbvc-addnew:not(.open) {
+    display: none;
+  }
+
+  .wpdbvc-addnew .form-fields {
+    margin: 0 auto 1rem;
+  }
+
+.wpdbvc-envs tr td {
+  vertical-align: middle;
+}
+
+  .wpdbvc-envs td:last-of-type {
+    text-align: right;
+  }
+
+  .wpdbvc-envs tr td h3 {
+    margin: 0.5em 0;
+  }
+
+  .wpdbvc-envs tr td .delete {
+    color: #a00;
+  }
+
+  .wpdbvc-envs tr td select {
+    width: 125px;
+  }

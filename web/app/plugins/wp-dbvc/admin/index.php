@@ -6,47 +6,68 @@
  */
 
 global $wpdb;
+$keys = ['Production', 'Development'];
 ?>
 
-<div class='wpdbvc-header'>
-  <h1><?= __('DB Version Control', 'wp-dbvc') ?></h1>
-</div>
-
-<div class='wrap wpdbvc-body'>
-  <div class='page-title flex'>
-    <h1 class='wp-leading-inline'>Databases</h1>
-    <a href='javascript:;' class='page-title-action'>Add Environment</a>
+<div id='wp-dbvc'>
+  <div class='wpdbvc-header'>
+    <h1><?=__('DB Version Control', 'wp-dbvc')?></h1>
   </div>
 
-  <form method='post' action='javascript:;'>
-    <input type='text' name='alias' placeholder="Alias ('staging')" />
-    <input type='text' name='host' placeholder='Connection string' />
-  </form>
+  <div class='wrap wpdbvc-body'>
+    <div class='page-title flex'>
+      <h1 class='wp-leading-inline'>Databases</h1>
 
-  <hr />
+      <a href='javascript:;' class='wpdbvc-toggle page-title-action'>
+        Add Environment
+      </a>
+    </div>
 
-  <table class='widefat striped'>
-    <thead>
-      <th>Name</th>
-      <th>Last change</th>
-      <th></th>
-    </thead>
+    <form class='wpdbvc-addnew' method='post' action='javascript:;'>
+      <div class='form-fields'>
+        <input type='text' name='alias' placeholder="Alias ('staging')" />
+        <input type='text' name='host' placeholder='Connection string' />
+      </div>
 
-    <tbody>
-      <tr>
-        <td>
-          <strong>Development</strong>
-          <p><?= env('DB_HOST') ?: env('DATABASE_URL') ?: 'localhost' ?>/<?= env('DB_NAME') ?>
-          </p>
-        </td>
+      <div class='form-footer'>
+        <button type='submit' class='button button-primary'>Save</button>
+        <button type='reset' class='button wpdbvc-toggle'>Cancel</button>
+      </div>
+    </form>
 
-        <td>N/A</td>
+    <table class='widefat striped wpdbvc-envs'>
+      <thead>
+        <th width="55%">Name</th>
+        <th>Touched</th>
+        <th></th>
+      </thead>
 
-        <td class='row-actions'>
-          <span><a href='javascript:;'>refresh</a></span>
-          <span class='delete'><a href='javascript:;'>delete</a></span>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+      <tbody>
+        <?php foreach ($keys as $k): ?>
+        <tr>
+          <td>
+            <h3><?=$k?></h3>
+            <p>mysql://<?=env('DB_HOST') ?: env('DATABASE_URL') ?: 'localhost'?>/<?=env('DB_NAME')?>
+            </p>
+          </td>
+
+          <td><?=mt_rand(1, 6)?> minute(s) ago</td>
+
+          <td>
+            <select>
+              <option selected>Merge into</option>
+              <?php foreach (array_diff($keys, [$k]) as $o): ?>
+              <option><?=$o?></option>
+              <?php endforeach?>
+            </select>
+
+            <br />
+
+            <a href='javascript:;' class='delete'>Remove</a>
+          </td>
+        </tr>
+        <?php endforeach?>
+      </tbody>
+    </table>
+  </div>
 </div>

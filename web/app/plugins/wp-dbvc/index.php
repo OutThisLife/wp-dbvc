@@ -22,21 +22,20 @@ if (!defined('ABSPATH')) {
  * Text Domain: wpdbvc
  */
 
-class WPDB_VC
-{
+class WPDB_VC {
   private $slug = 'wp-dbvc', $title;
 
-  public function __construct()
-  {
+  public function __construct() {
     global $wpdb;
 
     $this->title = __('WPDB VC', $this->slug);
 
     add_action('admin_menu', function () {
-      wp_enqueue_style($this->slug . '_styles', plugins_url('admin/style.css', __FILE__));
+      wp_enqueue_style($this->slug.'_css', plugins_url('admin/styles.css', __FILE__));
+      wp_enqueue_script($this->slug.'_js', plugins_url('admin/scripts.js', __FILE__), [], false, true);
 
       add_management_page($this->title, $this->title, 'manage_options', $this->slug, function () {
-        require_once plugin_dir_path(__FILE__) . './admin/index.php';
+        require_once plugin_dir_path(__FILE__).'./admin/index.php';
       });
     });
   }
