@@ -1,0 +1,16 @@
+{
+  "name": "heroku-wp",
+  "scripts": {},
+  "formation": {},
+  "env": {
+    "DATABASE_URL": {
+      "required": true
+    }
+  },
+  "addons": [],
+  "buildpacks": [
+    {
+      "url": "heroku/php"
+    }
+  ]
+}
